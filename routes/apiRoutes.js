@@ -3,7 +3,7 @@ const Workout = require("../models/workout");
 
 //All Workouts
 router.get("/api/workouts", (req, res) => {
-  Workout.find({});
+  //include field for total duration
   Workout.aggregate([
     {
       $addFields: {
@@ -47,12 +47,15 @@ router.put("/api/workouts/:id", ({ params, body }, res) => {
 
 // Past 7 Workouts for Dashboard
 router.get("/api/workouts/range", (req, res) => {
-  Workout.find({}).limit(7);
+  //include field for total duration, limit to 7 days
   Workout.aggregate([
     {
       $addFields: {
         totalDuration: { $sum: "$exercises.duration" },
       },
+    },
+    {
+      $limit: 7,
     },
   ])
     .then((dbWorkout) => {
