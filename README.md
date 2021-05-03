@@ -2,7 +2,7 @@
 
 ## Description
 
-A CMS-style tech blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+An application that utilizes a noSQL database to store, update, and graphically display a user's workouts.
 
 ## Table of Contents
 
@@ -14,26 +14,29 @@ A CMS-style tech blog site similar to a Wordpress site, where developers can pub
 ## Technologies-Utilized
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Node,js](https://nodejs.org/en/)
-- [express-handlebars](https://www.npmjs.com/package/express-handlebars)
-- [MySQL2](https://www.npmjs.com/package/mysql2)
-- [Sequelize](https://www.npmjs.com/package/sequelize)
-- [dotenv package](https://www.npmjs.com/package/dotenv)
-- [bcrypt package](https://www.npmjs.com/package/bcrypt)
-- [express-session](https://www.npmjs.com/package/express-session)
-- [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+- [Node.js](https://nodejs.org/en/)
+- [express](https://expressjs.com/)
+- [mongoDB](https://www.mongodb.com/2)
+- [mongoose](https://mongoosejs.com/)
 
 ## Usage
 
-- A user can browse blog posts by other contributors, and leave comments. A user can create their own account, where they can then Create, Edit, and Delete their own blog posts.
+- A user can perform the following
+
+  - Add exercises to the most recent workout plan.
+  - Add new exercises to a new workout plan.
+  - View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+  - View the total duration of each workout from the past seven workouts on the `stats` page.
 
 ## Deployed Application Link
 
-- [Deployed Link](https://tech-blog-bah.herokuapp.com/)
+- [Deployed Link](http://fitness-tracker-bah.herokuapp.com)
 
-- The following animation is a demo of the application:
+- Screenshots of the application:
 
-![Animated gif walkthrough](./assets/tech-blog-mvc-homework-demo.gif)
+![Homepage](./assets/images/fitness-tracker-01.png)
+
+![Dashboard](./assets/images/fitness-tracker-02.png)
 
 ## Credits
 
