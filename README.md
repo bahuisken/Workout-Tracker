@@ -30,7 +30,7 @@ An application that utilizes a noSQL database to store, update, and graphically 
 
 ## Deployed Application Link
 
-- [Deployed Link](http://fitness-tracker-bah.herokuapp.com)
+- [Deployed Link](https://fitness-tracker-bah.herokuapp.com)
 
 - Screenshots of the application:
 
